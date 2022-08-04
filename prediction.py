@@ -1,9 +1,9 @@
 import joblib
 import numpy as np
 from xgboost import XGBRegressor
-from category_encoders import TargetEncoder
+from sklearn.preprocessing import LabelEncoder
 
-target_enc = joblib.load(r'target_encoder.joblib')
+le = joblib.load(r'label_encoder.joblib')
 
 def get_prediction(data,model):
     """
@@ -12,7 +12,7 @@ def get_prediction(data,model):
     return model.predict(data)
 
 def encode_value(entered_value,options):
-    values = list(target_enc.fit_transform(options))
+    values = list(le.fit_transform(options))
     keys = options
     dictionary = dict(zip(keys, values))
     encoded_value = dictionary[entered_value]

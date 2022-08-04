@@ -1,6 +1,6 @@
 import joblib
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBRegressor
 from category_encoders import TargetEncoder
 
 target_enc = joblib.load(r'target_encoder.joblib')

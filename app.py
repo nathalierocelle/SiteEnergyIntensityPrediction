@@ -24,6 +24,14 @@ option_state_factor = ['State_1', 'State_2', 'State_4', 'State_6', 'State_8', 'S
 option_building_class = ['Commercial', 'Residential']
 
 def main():
+    
+    st.sidebar.markdown("<h2>About the app</h2>", unsafe_allow_html=True)
+    st.sidebar.write("""
+    According to International Energy Agency (IEA), the lifecycle of buildings (from construction to demolition) 
+    was responsible for 37% of global energy-related and process-related CO2 emissions in 2020.
+    This app will predict the site energy usage intensity given the characteristics and the weather data for the
+    location of the building.
+    """)
         
     st.subheader("Enter the following scenario:")
     

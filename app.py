@@ -19,11 +19,10 @@ option_facility_type = ['Food_Grocery', 'Warehouse', 'Retail', 'Education', 'Off
                         'Laboratory','Public_Assembly', 'Lodging', 'Health_Care', 'Religious_worship','Parking_Garage', 'Services', 
                         'Unit_Building', 'Multifamily','Public_Safety', 'Mixed_Use']
 
-option_state_factor = ['State_1' 'State_2' 'State_4' 'State_6' 'State_8' 'State_10' 'State_11']
+option_state_factor = ['State_1', 'State_2', 'State_4', 'State_6', 'State_8', 'State_10', 'State_11']
 
-option_building_class = ['Commercial' 'Residential']
+option_building_class = ['Commercial', 'Residential']
 
-st.markdown("<h1 style='text-align: center;'>💡Site Energy Intensity Prediction 💡</h1>", unsafe_allow_html=True)
 def main():
         
     st.subheader("Enter the following scenario:")
@@ -41,7 +40,7 @@ def main():
     days_below_20F = st.slider("Days with below 20F temperature",0, 93,1)
     days_below_10F = st.slider("Days with below 10F temperature",0, 59,1)
     days_above_100F = st.slider("Days with above 100F temperature",0, 1,1)   
-    heating_degree = st.slider("Months where the daily average temperature falls under 65 Fahreinheit",options=options_lighting_conditions)
+    heating_degree = st.slider("Total months where the daily average temperature falls under 65 Fahreinheit",33,660,1)
     
     spring_avg_temp = st.slider("Average temperature (in Fahreinheit) during spring season at building location",41.5, 75.15,0.1)
     fall_avg_temp = st.slider("Average temperature (in Fahreinheit) during fall season at building location",47.0, 79.0,0.1)

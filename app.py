@@ -62,8 +62,10 @@ def main():
         state_factor = encode_value(state_factor,option_state_factor)
         building_class = encode_value(building_class,option_building_class)
 
-        data = np.array([accident_cause,casualties,day_of_week,day_time,accident_area,
-                         juntion_type,lighting_cond,vehicles_involved,vehicle_type,driving_experience]).reshape(1,-1)
+        data = np.array([facility_type,state_factor,building_class,year_built,energy_star_rating,days_below_20F,days_below_10F,
+                         days_above_100F,days_above_100F,heating_degree,spring_avg_temp,fall_avg_temp,summer_min_temp,min_temp,
+                        avg_temp,max_wind_speed,direction_max_wind_speed,snowdepth_inches,snowfall_inches,
+                         precipitation_inches]).reshape(1,-1)
         #st.write(data)
         pred = get_prediction(data=data, model=model)
         st.write(f"🔌 The predicted site energy of the building is:  {pred[0]} 🔌")

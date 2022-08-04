@@ -15,9 +15,9 @@ features = ['facility_type','energy_star_rating','State_Factor','days_below_20F'
             'days_above_100F','heating_degree','max_wind_speed','precipitation_inches','fall_avg_temp','floor_area',
             'direction_max_wind_speed','avg_temp','days_below_10F','year_built','summer_min_temp','min_temp','snowfall_inches']
 
-option_facility_type = ['Food_Grocery', 'Warehouse', 'Retail', 'Education', 'Office','Data_Center', 'Commercial', 'Industrial',
-                        'Laboratory','Public_Assembly', 'Lodging', 'Health_Care', 'Religious_worship','Parking_Garage', 'Services', 
-                        'Unit_Building', 'Multifamily','Public_Safety', 'Mixed_Use']
+option_facility_type = ['Food/Grocery', 'Warehouse', 'Retail', 'Education', 'Office','Data Center', 'Commercial', 'Industrial',
+                        'Laboratory','Public Assembly', 'Lodging', 'Health Care', 'Religious/Worship','Parking/Garage', 'Services', 
+                        'Unit/Building', 'Multifamily','Public Safety', 'Mixed Used']
 
 option_state_factor = ['State_1', 'State_2', 'State_4', 'State_6', 'State_8', 'State_10', 'State_11']
 
